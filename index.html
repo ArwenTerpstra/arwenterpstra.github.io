@@ -8,15 +8,20 @@
 </head>
 
 <body>
-    <div class="login">
-        <p class="text medium-text username-p">Username</p>
-        <input class="username-input">
-        <p class="text medium-text password-p">Password</p>
-        <input class="password-input">
-        <button><span class="text big-text">Log In</span></button>
+    <form class="login-form">
+        <label class="text medium-text username-p">Username</label>
+        <input class="username-input text" type="text" name="uname" required>
+
+        <label class="text medium-text password-p">Password</label>
+        <input class="password-input text" type="password" name="pass" required>
+
+        <button type="submit"><span class="text big-text">Log In</span></button>
+
         <p class="text small-text no-acc">No account?<a href="index.html" class="text small-text sign-up">Sign up.</a>
         </p>
-    </div>
+    </form>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
